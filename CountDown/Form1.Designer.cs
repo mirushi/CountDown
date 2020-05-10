@@ -30,24 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.txtTimer = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.txtTimer = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
-            // 
-            // txtTimer
-            // 
-            this.txtTimer.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimer.Location = new System.Drawing.Point(14, 14);
-            this.txtTimer.Margin = new System.Windows.Forms.Padding(5);
-            this.txtTimer.Name = "txtTimer";
-            this.txtTimer.Size = new System.Drawing.Size(261, 43);
-            this.txtTimer.TabIndex = 0;
-            this.txtTimer.Text = "00:00";
-            this.txtTimer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnStart
             // 
@@ -104,17 +93,29 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtTimer
+            // 
+            this.txtTimer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTimer.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimer.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtTimer.Location = new System.Drawing.Point(107, 12);
+            this.txtTimer.Name = "txtTimer";
+            this.txtTimer.Size = new System.Drawing.Size(168, 43);
+            this.txtTimer.TabIndex = 5;
+            this.txtTimer.Text = "00:00";
+            this.txtTimer.TextChanged += new System.EventHandler(this.txtTimer_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(292, 208);
+            this.ClientSize = new System.Drawing.Size(286, 208);
+            this.Controls.Add(this.txtTimer);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.txtTimer);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -126,18 +127,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "BHT CNPM CountDown";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtTimer;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox txtTimer;
     }
 }
 

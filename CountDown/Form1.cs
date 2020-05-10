@@ -62,6 +62,7 @@ namespace CountDown
                 // Display time remaining as mm:ss
                 var timespan = TimeSpan.FromSeconds(timeLeft);
                 txtTimer.Text = timespan.ToString(@"mm\:ss");
+                txtTimer.ForeColor = Color.DodgerBlue;
             }
             else
             {
@@ -83,6 +84,11 @@ namespace CountDown
                 this.Size = new Size(this.Size.Width, 247);
                 button1.Text = "Hide";
             }
+        }
+
+        private void txtTimer_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
