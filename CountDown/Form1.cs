@@ -52,13 +52,13 @@ namespace CountDown
             ToolStripItem item = e.ClickedItem;
             if (item.Text.Equals("Minimize"))
             {
+                cm.Hide();
                 this.WindowState = FormWindowState.Minimized;
             }
             else if (item.Text.Equals("Close"))
             {
                 this.Close();
             }
-            cm.Hide();
         }
 
         private void setupFormWithoutTitle()
