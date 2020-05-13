@@ -44,7 +44,7 @@ namespace CountDown
         
         private void setupContextMenu()
         {
-            cm.Items.Add("Transparent");
+            cm.Items.Add("Toggle");
             cm.Items.Add("Minimize");
             cm.Items.Add("Close");
             cm.Show();
@@ -67,7 +67,7 @@ namespace CountDown
             {
                 this.Close();
             }
-            else if (item.Text.Equals("Transparent"))
+            else if (item.Text.Equals("Toggle"))
             {
                 double val = this.Opacity;
                 //Đang trong suốt
