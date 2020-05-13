@@ -7,6 +7,9 @@ namespace CountDown
 {
     public partial class Form1 : Form
     {
+        //Biến giữ giá trị trong suốt.
+        private const double TRONG_SUOT = 0.8D;
+
         private int timeLeft;
 
         private bool mov;
@@ -41,6 +44,7 @@ namespace CountDown
         
         private void setupContextMenu()
         {
+            cm.Items.Add("Trong suốt");
             cm.Items.Add("Minimize");
             cm.Items.Add("Close");
             cm.Show();
@@ -53,15 +57,28 @@ namespace CountDown
 
         private void contextMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
+            cm.Hide();
             ToolStripItem item = e.ClickedItem;
             if (item.Text.Equals("Minimize"))
             {
-                cm.Hide();
                 this.WindowState = FormWindowState.Minimized;
             }
             else if (item.Text.Equals("Close"))
             {
                 this.Close();
+            }
+            else if (item.Text.Equals("Trong suốt"))
+            {
+                double val = this.Opacity;
+                //Đang trong suốt
+                if (val < 1)
+                {
+                    this.Opacity = 1;
+                }
+                else
+                {
+                    this.Opacity = TRONG_SUOT;
+                }
             }
         }
 
