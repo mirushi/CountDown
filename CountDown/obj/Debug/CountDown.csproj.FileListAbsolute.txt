@@ -18,3 +18,13 @@ D:\GitHub\CountDown\CountDown\obj\Debug\CountDown.csproj.GenerateResource.cache
 D:\GitHub\CountDown\CountDown\obj\Debug\CountDown.csproj.CoreCompileInputs.cache
 D:\GitHub\CountDown\CountDown\obj\Debug\CountDown.exe
 D:\GitHub\CountDown\CountDown\obj\Debug\CountDown.pdb
+E:\Dual Access\CloneRepo\CountDown\CountDown\bin\Debug\CountDown.exe.config
+E:\Dual Access\CloneRepo\CountDown\CountDown\bin\Debug\CountDown.exe
+E:\Dual Access\CloneRepo\CountDown\CountDown\bin\Debug\CountDown.pdb
+E:\Dual Access\CloneRepo\CountDown\CountDown\obj\Debug\CountDown.csprojAssemblyReference.cache
+E:\Dual Access\CloneRepo\CountDown\CountDown\obj\Debug\CountDown.Form1.resources
+E:\Dual Access\CloneRepo\CountDown\CountDown\obj\Debug\CountDown.Properties.Resources.resources
+E:\Dual Access\CloneRepo\CountDown\CountDown\obj\Debug\CountDown.csproj.GenerateResource.cache
+E:\Dual Access\CloneRepo\CountDown\CountDown\obj\Debug\CountDown.csproj.CoreCompileInputs.cache
+E:\Dual Access\CloneRepo\CountDown\CountDown\obj\Debug\CountDown.exe
+E:\Dual Access\CloneRepo\CountDown\CountDown\obj\Debug\CountDown.pdb

@@ -45,10 +45,10 @@
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.btnStart.ForeColor = System.Drawing.Color.White;
-            this.btnStart.Location = new System.Drawing.Point(6, 59);
+            this.btnStart.Location = new System.Drawing.Point(9, 55);
             this.btnStart.Margin = new System.Windows.Forms.Padding(5);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(41, 19);
+            this.btnStart.Size = new System.Drawing.Size(31, 13);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Start";
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
@@ -60,10 +60,10 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(88, 59);
+            this.btnClear.Location = new System.Drawing.Point(91, 55);
             this.btnClear.Margin = new System.Windows.Forms.Padding(5);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(44, 19);
+            this.btnClear.Size = new System.Drawing.Size(33, 13);
             this.btnClear.TabIndex = 2;
             this.btnClear.Text = "Clear";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -75,10 +75,10 @@
             this.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStop.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.btnStop.ForeColor = System.Drawing.Color.White;
-            this.btnStop.Location = new System.Drawing.Point(49, 59);
+            this.btnStop.Location = new System.Drawing.Point(52, 55);
             this.btnStop.Margin = new System.Windows.Forms.Padding(5);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(40, 19);
+            this.btnStop.Size = new System.Drawing.Size(31, 13);
             this.btnStop.TabIndex = 3;
             this.btnStop.Text = "Stop";
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
@@ -108,9 +108,9 @@
             this.txtTimer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTimer.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.txtTimer.ForeColor = System.Drawing.Color.White;
-            this.txtTimer.Location = new System.Drawing.Point(12, 7);
+            this.txtTimer.Location = new System.Drawing.Point(12, 5);
             this.txtTimer.Name = "txtTimer";
-            this.txtTimer.Size = new System.Drawing.Size(137, 51);
+            this.txtTimer.Size = new System.Drawing.Size(137, 48);
             this.txtTimer.TabIndex = 5;
             this.txtTimer.Text = "00:00";
             this.txtTimer.SelectionChanged += new System.EventHandler(this.txtTimer_SelectionChanged);
@@ -118,12 +118,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::CountDown.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(268, 125);
+            this.ClientSize = new System.Drawing.Size(268, 114);
             this.Controls.Add(this.txtTimer);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnStop);
@@ -137,7 +137,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Opacity = 0.8D;
+            this.Opacity = 1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "BHT CNPM CountDown";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);

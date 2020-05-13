@@ -12,12 +12,16 @@ namespace CountDown
         private bool mov;
         private int movX;
         private int movY;
-
+       
         //Context menu cho form.
         ContextMenuStrip cm = new ContextMenuStrip();
 
         public Form1()
         {
+            this.TransparencyKey = Color.FromArgb(232, 232, 232);
+            this.BackColor = Color.FromArgb(232, 232, 232);
+            
+           
             this.TopMost = true;
 
             //Chỉnh cái này để background của chúng ta đươc trong suốt.
@@ -34,7 +38,7 @@ namespace CountDown
             //Setup context menu cho form.
             setupContextMenu();
         }
-
+        
         private void setupContextMenu()
         {
             cm.Items.Add("Minimize");
